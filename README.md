@@ -6,5 +6,7 @@ TradeBridge is a COD (Cash On Delivery) e-commerce marketplace platform for Tuni
 
 🗺️ Complete frontend sitemap (English): [docs/FRONTEND_SITEMAP.md](docs/FRONTEND_SITEMAP.md)
 
-🚀 First build prompt for Cursor (Phase 1 — foundation & design system): [docs/CURSOR_BUILD_PROMPT.md](docs/CURSOR_BUILD_PROMPT.md)
+🚀 Cursor build prompts:
+- Phase 1 — foundation & design system: [docs/CURSOR_BUILD_PROMPT.md](docs/CURSOR_BUILD_PROMPT.md)
+- Phase 2 — product catalog & agent review: [docs/CURSOR_BUILD_PROMPT_PHASE2.md](docs/CURSOR_BUILD_PROMPT_PHASE2.md)
 

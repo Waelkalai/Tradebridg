@@ -120,9 +120,9 @@ moving forward.
 
 ## Suggested follow-up prompts (later phases)
 
-Use these one at a time, after Phase 1 is merged and reviewed, so each phase stays reviewable:
+Use these one at a time, after each phase is merged and reviewed, so every phase stays reviewable:
 
-1. **Phase 2 — Product catalog & agent review**: supplier "Add Product" full form (variants, price tiers/MOQ, media, main picture, depot), supplier product list with status badges, agent product review queue + detail with the 3-way decision, seller product browsing/detail pages.
+1. **Phase 2 — Product catalog & agent review**: supplier "Add Product" full form (variants, price tiers/MOQ, media, main picture, depot), supplier product list with status badges, agent product review queue + detail with the 3-way decision, seller product browsing/detail pages. ✅ Full prompt ready: [`docs/CURSOR_BUILD_PROMPT_PHASE2.md`](./CURSOR_BUILD_PROMPT_PHASE2.md).
 2. **Phase 3 — Orders & the confirmation-call flow**: seller "Create Order" with the single-depot rule, orders list/detail with the full status timeline, agent "orders to confirm" queue and call-outcome logging.
 3. **Phase 4 — Wallet, retour balance & withdrawals**: wallet dashboard, withdrawal request flow (bank/cash) with OTP, retour balance page, manager withdrawal-approval queue.
 4. **Phase 5 — Moderated chat & wholesale**: conversation inbox/thread UI with the "pending review" state, agent message-moderation queue, wholesale request flow with escrow status.
