@@ -19,10 +19,13 @@ still the single source of truth:
 
 Do not rebuild or restyle anything from Phase 1 — reuse the existing UI kit
 (Button, Card, Badge/StatusPill, Table, Modal, Input, Select, EmptyState,
-Skeleton, etc.), color tokens, layout shell, and i18n setup exactly as they
-are. Every new page must look and feel like it was built by the same team
-in the same sitting as Phase 1 — same blue palette, same spacing, same
-component patterns, full RTL support, fully responsive.
+Skeleton, etc.), color tokens, layout shell, i18n setup (all three locales:
+ar/fr/en), and theme setup (light/dark/auto) exactly as they are. Every new
+string must go through the same i18n layer and be translated into all three
+locales, not just Arabic/French. Every new page must look and feel like it
+was built by the same team in the same sitting as Phase 1 — same blue
+palette, same spacing, same component patterns, full RTL support, correct
+in dark mode, fully responsive.
 
 ## Scope of THIS prompt (Phase 2 only)
 
@@ -35,9 +38,9 @@ auth backend was promoted to real Postgres — so it's trivial to swap for a
 real API once the products/agencies/depots backend module is built (see
 Phase 8 in docs/CURSOR_BUILD_PROMPT.md). Seed it with ~15-20 realistic mock products across a few
 categories (electronics accessories, home goods, beauty, kids' toys —
-whatever reads well in Arabic/French) so every list/grid view has enough
-data to look convincing, including a mix of statuses (pending, accepted
-locally, accepted whole-stores, rejected).
+whatever reads and translates well across Arabic/French/English) so every
+list/grid view has enough data to look convincing, including a mix of
+statuses (pending, accepted locally, accepted whole-stores, rejected).
 
 Each product record must carry every field described in
 docs/PLATFORM_SPEC.md Section 4-A:
@@ -136,7 +139,8 @@ docs/PLATFORM_SPEC.md Section 4-A:
 - All new forms use the same Zod + react-hook-form pattern as the auth forms
   from Phase 1.
 - All new routes must sit inside the existing role-aware authenticated shell
-  (correct sidebar highlighting the active item) and respect RTL.
+  (correct sidebar highlighting the active item), respect RTL for Arabic,
+  and render correctly in both light and dark theme.
 - Loading states use the existing Skeleton components; empty states (e.g. no
   products yet) use the existing EmptyState component with a relevant call
   to action.
@@ -153,7 +157,8 @@ docs/PLATFORM_SPEC.md Section 4-A:
 - [ ] Seller: browse products (filters + supplier-count badge), product
       detail (tiers table, variant selector, masked supplier ID), favorites/
       wishlist, deals with countdown, anonymized suppliers directory.
-- [ ] Everything responsive, RTL-correct, and visually consistent with Phase 1.
+- [ ] Everything responsive, RTL-correct, correct in light/dark/auto theme,
+      translated into ar/fr/en, and visually consistent with Phase 1.
 - [ ] No console errors; `npm run dev` runs clean.
 
 Work through this systematically, committing logically as you go. Ask me
