@@ -36,7 +36,7 @@ localStorage-backed data layer for products, behind a clean interface — the
 same "mock now, real FastAPI endpoint later" pattern Phase 1 used before its
 auth backend was promoted to real Postgres — so it's trivial to swap for a
 real API once the products/agencies/depots backend module is built (see
-Phase 8 in docs/CURSOR_BUILD_PROMPT.md). Seed it with ~15-20 realistic mock products across a few
+Phase 9 in docs/CURSOR_BUILD_PROMPT.md). Seed it with ~15-20 realistic mock products across a few
 categories (electronics accessories, home goods, beauty, kids' toys —
 whatever reads and translates well across Arabic/French/English) so every
 list/grid view has enough data to look convincing, including a mix of
