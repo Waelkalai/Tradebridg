@@ -29,9 +29,11 @@ component patterns, full RTL support, fully responsive.
 ### 1. Shared mock data layer for products
 
 Build lib/products.ts (or a small products/ module) as the in-memory /
-localStorage-backed data layer for products, behind a clean interface, the
-same pattern as the Phase 1 mock auth layer — so it's trivial to swap for a
-real API later. Seed it with ~15-20 realistic mock products across a few
+localStorage-backed data layer for products, behind a clean interface — the
+same "mock now, real FastAPI endpoint later" pattern Phase 1 used before its
+auth backend was promoted to real Postgres — so it's trivial to swap for a
+real API once the products/agencies/depots backend module is built (see
+Phase 8 in docs/CURSOR_BUILD_PROMPT.md). Seed it with ~15-20 realistic mock products across a few
 categories (electronics accessories, home goods, beauty, kids' toys —
 whatever reads well in Arabic/French) so every list/grid view has enough
 data to look convincing, including a mix of statuses (pending, accepted
