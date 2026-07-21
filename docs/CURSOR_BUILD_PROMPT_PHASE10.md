@@ -85,9 +85,18 @@ product/message/withdrawal/ticket/dispute/store), which channels were used
 (in_app is always created; email/sms are simulated the exact same
 dev-mode way OTP has been throughout this whole project — logged, never
 really sent), read flag, created_at) and `NotificationPreference`
-(user_id, per-category email/sms toggle — the mandatory ones like
-withdrawal OTP and account activation/rejection are locked "always on" and
-shown as disabled toggles, per the spec's own channel table).
+(user_id, per-category email/sms toggle). PLATFORM_SPEC.md §22's table is
+the ONLY authority for which channel(s) apply to which event, and it marks
+exactly ONE entry as mandatory in the text itself — "رمز تحقق OTP (سحب
+مالي): SMS (إلزامي)" (SMS is *mandatory* for the withdrawal OTP). Treat
+ONLY that one as a hard-locked, disabled-toggle preference (in_app is
+always implicitly on for every event, and isn't a togglable preference at
+all). Every other row in §22's table (account activation/rejection, ticket
+replies, low-stock alerts, etc.) is the spec's RECOMMENDED DEFAULT channel
+combination, not a stated mandatory one — seed `NotificationPreference`
+with those defaults pre-enabled, but leave them user-toggleable, since the
+spec doesn't say otherwise. If you want stricter locking on any of these
+later, that's a product decision to make explicitly, not one to infer here.
 
 Build one shared `notify(user_id, type, payload)` server-side function
 that every existing module calls at its trigger point — and this is
@@ -105,7 +114,9 @@ Pages:
   styling, mark-as-read (individually and "mark all read"), filter by
   type, click-through navigates to the related entity.
 - `/settings/notifications` — preference toggles per event category,
-  mandatory ones shown locked-on with an explanatory tooltip.
+  pre-enabled to §22's recommended defaults; ONLY the withdrawal-OTP SMS
+  toggle is locked-on (disabled, with an explanatory tooltip that it's
+  required per PLATFORM_SPEC.md §22) — every other toggle stays editable.
 - `/admin/settings/notifications` — admin-editable message templates per
   event type, per locale (ar/fr/en), with a "send test" action that
   renders the template with sample data into the dev-mode log (same
