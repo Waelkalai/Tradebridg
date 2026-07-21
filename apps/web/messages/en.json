@@ -1,0 +1,106 @@
+{
+  "brand": {
+    "name": "TradeBridge"
+  },
+  "nav": {
+    "login": "Log in",
+    "registerSeller": "Register as Seller",
+    "registerSupplier": "Register as Supplier",
+    "dashboard": "Dashboard",
+    "logout": "Log out"
+  },
+  "landing": {
+    "badge": "COD Marketplace for Tunisia",
+    "title": "The bridge between suppliers, sellers and customers",
+    "subtitle": "TradeBridge connects Tunisian suppliers, independent sellers and delivery agencies on one trusted platform — with cash on delivery, moderated communication, and full logistics tracking.",
+    "ctaSeller": "I'm a Seller",
+    "ctaSupplier": "I'm a Supplier",
+    "statsProducts": "Products listed",
+    "statsAgencies": "Agencies across Tunisia",
+    "statsOrders": "Orders shipped",
+    "featuresTitle": "Built for how Tunisian commerce actually works",
+    "feature1Title": "Sell with zero stock",
+    "feature1Body": "Browse supplier catalogs, sell on Facebook/Instagram/TikTok, and create the order only when a real customer buys.",
+    "feature2Title": "Supply without finding buyers",
+    "feature2Body": "List your products once — sellers across the country discover and sell them for you.",
+    "feature3Title": "Full logistics, tracked end to end",
+    "feature3Body": "Every product is scanned in, boxed, and handed to a courier — with a complete audit trail.",
+    "howTitle": "How it works",
+    "howStep1": "Supplier adds a product",
+    "howStep2": "Agent reviews & approves",
+    "howStep3": "Seller sells it online",
+    "howStep4": "Agent confirms the order",
+    "howStep5": "Agency ships it",
+    "howStep6": "Customer receives & pays"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Log in to your TradeBridge account",
+    "usernameOrEmail": "Username or email",
+    "password": "Password",
+    "loginButton": "Log in",
+    "loginError": "Invalid credentials or account not active yet.",
+    "chooseRoleTitle": "Create your account",
+    "chooseRoleSubtitle": "Are you a seller or a supplier?",
+    "sellerCardTitle": "I'm a Seller",
+    "sellerCardBody": "I sell products online without holding stock.",
+    "supplierCardTitle": "I'm a Supplier",
+    "supplierCardBody": "I have products and want sellers to sell them.",
+    "fullName": "Full name",
+    "cinNumber": "National ID (CIN) number",
+    "email": "Email",
+    "phone": "Phone number",
+    "companyName": "Company name (optional)",
+    "fiscalNumber": "Fiscal / Matricule Fiscal number (optional)",
+    "depotName": "Primary depot name",
+    "depotAddress": "Primary depot address",
+    "submitRegister": "Create account",
+    "pendingTitle": "Your account is under review",
+    "pendingBody": "Thanks, {name}! Our team is reviewing your registration. You'll be notified by email and SMS once your account (username: {username}) is activated.",
+    "alreadyHaveAccount": "Already have an account?",
+    "backToLogin": "Back to login"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {name}",
+    "role": "Role",
+    "username": "Username",
+    "ordersToday": "Orders today",
+    "walletBalance": "Wallet balance",
+    "pendingReview": "Pending review",
+    "openTickets": "Open tickets",
+    "comingSoon": "This module is planned for a later build phase.",
+    "seller": {
+      "title": "Seller Dashboard",
+      "retourBalance": "Retour balance"
+    },
+    "supplier": {
+      "title": "Supplier Dashboard",
+      "stockAlerts": "Stock alerts"
+    },
+    "agent": {
+      "title": "Agent Dashboard",
+      "accountApprovals": "Account approvals",
+      "productReviews": "Product reviews",
+      "messagesPending": "Messages pending"
+    },
+    "manager": {
+      "title": "Manager Dashboard",
+      "activeAgents": "Active agents",
+      "withdrawalApprovals": "Pending withdrawal approvals"
+    },
+    "admin": {
+      "title": "Admin Dashboard",
+      "totalUsers": "Total users",
+      "totalAgencies": "Agencies",
+      "gmv": "GMV"
+    }
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "Auto"
+  },
+  "common": {
+    "loading": "Loading…"
+  }
+}

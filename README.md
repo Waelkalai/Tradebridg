@@ -18,3 +18,9 @@ TradeBridge is a COD (Cash On Delivery) e-commerce marketplace platform for Tuni
 - Phase 9 — backend hardening (6 sub-prompts 9a-9f): [docs/CURSOR_BUILD_PROMPT_PHASE9.md](docs/CURSOR_BUILD_PROMPT_PHASE9.md)
 - Phase 10 — tickets & notification center (final phase): [docs/CURSOR_BUILD_PROMPT_PHASE10.md](docs/CURSOR_BUILD_PROMPT_PHASE10.md)
 
+## Current implementation status
+
+**Phase 1 (foundation, auth, design system, i18n, theming) is implemented and working** in `apps/web` (Next.js) and `apps/api` (FastAPI). Phases 2-10 above are documented as build prompts only — not yet implemented as code.
+
+See [`RUNNING_LOCALLY.md`](RUNNING_LOCALLY.md) for how to run and test it, including demo login credentials for every role (Seller, Supplier, Agent, Manager, Admin).
+
