@@ -1,0 +1,106 @@
+{
+  "brand": {
+    "name": "TradeBridge"
+  },
+  "nav": {
+    "login": "Connexion",
+    "registerSeller": "S'inscrire comme Vendeur",
+    "registerSupplier": "S'inscrire comme Fournisseur",
+    "dashboard": "Tableau de bord",
+    "logout": "Déconnexion"
+  },
+  "landing": {
+    "badge": "Marketplace COD pour la Tunisie",
+    "title": "Le pont entre fournisseurs, vendeurs et clients",
+    "subtitle": "TradeBridge connecte les fournisseurs tunisiens, les vendeurs indépendants et les agences de livraison sur une plateforme unique et fiable — avec paiement à la livraison, communication modérée et suivi logistique complet.",
+    "ctaSeller": "Je suis Vendeur",
+    "ctaSupplier": "Je suis Fournisseur",
+    "statsProducts": "Produits listés",
+    "statsAgencies": "Agences en Tunisie",
+    "statsOrders": "Commandes livrées",
+    "featuresTitle": "Conçu pour le commerce tunisien",
+    "feature1Title": "Vendez sans stock",
+    "feature1Body": "Parcourez les catalogues des fournisseurs, vendez sur Facebook/Instagram/TikTok, et créez la commande seulement quand un client achète réellement.",
+    "feature2Title": "Fournissez sans chercher d'acheteurs",
+    "feature2Body": "Ajoutez vos produits une seule fois — des vendeurs partout dans le pays les découvrent et les vendent pour vous.",
+    "feature3Title": "Logistique complète et traçable",
+    "feature3Body": "Chaque produit est scanné, mis en colis, puis remis au livreur — avec une traçabilité complète.",
+    "howTitle": "Comment ça marche",
+    "howStep1": "Le fournisseur ajoute un produit",
+    "howStep2": "L'agent vérifie et approuve",
+    "howStep3": "Le vendeur le vend en ligne",
+    "howStep4": "L'agent confirme la commande",
+    "howStep5": "L'agence l'expédie",
+    "howStep6": "Le client reçoit et paie"
+  },
+  "auth": {
+    "loginTitle": "Bon retour",
+    "loginSubtitle": "Connectez-vous à votre compte TradeBridge",
+    "usernameOrEmail": "Nom d'utilisateur ou email",
+    "password": "Mot de passe",
+    "loginButton": "Se connecter",
+    "loginError": "Identifiants invalides ou compte pas encore activé.",
+    "chooseRoleTitle": "Créer votre compte",
+    "chooseRoleSubtitle": "Êtes-vous vendeur ou fournisseur ?",
+    "sellerCardTitle": "Je suis Vendeur",
+    "sellerCardBody": "Je vends des produits en ligne sans stock.",
+    "supplierCardTitle": "Je suis Fournisseur",
+    "supplierCardBody": "J'ai des produits et je veux que des vendeurs les vendent.",
+    "fullName": "Nom complet",
+    "cinNumber": "Numéro CIN",
+    "email": "Email",
+    "phone": "Numéro de téléphone",
+    "companyName": "Nom de l'entreprise (optionnel)",
+    "fiscalNumber": "Matricule fiscal (optionnel)",
+    "depotName": "Nom du dépôt principal",
+    "depotAddress": "Adresse du dépôt principal",
+    "submitRegister": "Créer le compte",
+    "pendingTitle": "Votre compte est en cours de révision",
+    "pendingBody": "Merci, {name} ! Notre équipe examine votre inscription. Vous serez notifié par email et SMS une fois votre compte (nom d'utilisateur : {username}) activé.",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "backToLogin": "Retour à la connexion"
+  },
+  "dashboard": {
+    "welcome": "Bienvenue, {name}",
+    "role": "Rôle",
+    "username": "Nom d'utilisateur",
+    "ordersToday": "Commandes aujourd'hui",
+    "walletBalance": "Solde du portefeuille",
+    "pendingReview": "En attente de révision",
+    "openTickets": "Tickets ouverts",
+    "comingSoon": "Ce module est prévu pour une phase de développement future.",
+    "seller": {
+      "title": "Tableau de bord Vendeur",
+      "retourBalance": "Solde de retour"
+    },
+    "supplier": {
+      "title": "Tableau de bord Fournisseur",
+      "stockAlerts": "Alertes de stock"
+    },
+    "agent": {
+      "title": "Tableau de bord Agent",
+      "accountApprovals": "Approbations de comptes",
+      "productReviews": "Révisions de produits",
+      "messagesPending": "Messages en attente"
+    },
+    "manager": {
+      "title": "Tableau de bord Manager",
+      "activeAgents": "Agents actifs",
+      "withdrawalApprovals": "Retraits en attente"
+    },
+    "admin": {
+      "title": "Tableau de bord Admin",
+      "totalUsers": "Utilisateurs totaux",
+      "totalAgencies": "Agences",
+      "gmv": "GMV"
+    }
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Auto"
+  },
+  "common": {
+    "loading": "Chargement…"
+  }
+}

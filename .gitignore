@@ -1,0 +1,22 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Env files (keep .env.example committed, not real .env)
+apps/api/.env
+apps/web/.env.local
+
+# OS / editors
+.DS_Store
+*.log
+
+# Uploads (dev-only local file storage)
+apps/api/uploads/

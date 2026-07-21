@@ -1,0 +1,34 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: tradebridge
+      POSTGRES_PASSWORD: tradebridge_dev_pw
+      POSTGRES_DB: tradebridge
+    ports:
+      - "5432:5432"
+    volumes:
+      - tradebridge_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tradebridge"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: ./apps/api
+    restart: unless-stopped
+    env_file: ./apps/api/.env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://tradebridge:tradebridge_dev_pw@db:5432/tradebridge
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./apps/api:/app
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  tradebridge_pgdata:
