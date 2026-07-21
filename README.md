@@ -16,4 +16,5 @@ TradeBridge is a COD (Cash On Delivery) e-commerce marketplace platform for Tuni
 - Phase 7 — white-label store & admin portal: [docs/CURSOR_BUILD_PROMPT_PHASE7.md](docs/CURSOR_BUILD_PROMPT_PHASE7.md)
 - Phase 8 — disputes & post-delivery returns: [docs/CURSOR_BUILD_PROMPT_PHASE8.md](docs/CURSOR_BUILD_PROMPT_PHASE8.md)
 - Phase 9 — backend hardening (6 sub-prompts 9a-9f): [docs/CURSOR_BUILD_PROMPT_PHASE9.md](docs/CURSOR_BUILD_PROMPT_PHASE9.md)
+- Phase 10 — tickets & notification center (final phase): [docs/CURSOR_BUILD_PROMPT_PHASE10.md](docs/CURSOR_BUILD_PROMPT_PHASE10.md)
 
